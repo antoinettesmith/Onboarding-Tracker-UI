@@ -1,7 +1,3 @@
-from pathlib import Path
-
-readme_content = """# React Onboarding Progress Tracker
-
 A comprehensive, multi-phase onboarding component built with **React** and **Tailwind CSS**. Features dynamic step layouts, progress tracking, and customizable workflows perfect for user onboarding, setup wizards, and multi-step processes.
 
 ## ✨ Features
