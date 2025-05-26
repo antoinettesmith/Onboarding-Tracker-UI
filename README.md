@@ -167,25 +167,3 @@ npm run test
 ## 📝 License
 
 This project is licensed under the MIT License – see the LICENSE file for details.
-
-## 👨‍💻 Author
-
-**Antoinette Smith**  
-- GitHub: [@yourusername](https://github.com/yourusername)  
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)  
-- Portfolio: [yourwebsite.com](https://yourwebsite.com)
-
-## 🙏 Acknowledgments
-
-- Inspired by modern onboarding experiences from leading SaaS platforms  
-- Built with accessibility and user experience best practices  
-- Tailwind CSS for the excellent utility-first approach  
-
-**⭐ If you found this project helpful, please give it a star on GitHub!**
-"""
-
-# Save to file
-readme_path = Path("/mnt/data/README.md")
-readme_path.write_text(readme_content)
-
-readme_path.name
