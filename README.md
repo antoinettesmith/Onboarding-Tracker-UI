@@ -77,14 +77,17 @@ const customPhases = [
 ### Color Themes
 
 ```js
-const customColors = {
-  purple: "#6b65ff",        // Primary action color
-  lightGreen: "#d2ff66",    // Completion indicator
-  darkGreen: "#00785d",     // Success/completed state
-  essential: "#6b65ff",     // Essential steps group
-  account: "#4299e1",       // Account setup group
-  final: "#9061f9",         // Final steps group
-};
+ const customColors = {
+    purple: "#6b65ff",
+    lightGreen: "#d2ff66",
+    darkGreen: "#00785d",
+    borderGreen: "#00785d",
+    checkmarkGreen: "#00785d",
+    // New colors for the Site Setup phase groups
+    essential: "#6b65ff",
+    account: "#4299e1",
+    final: "#9061f9",
+  };
 ```
 
 ### Phase Types
