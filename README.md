@@ -55,8 +55,8 @@ If you prefer local development:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/react-onboarding-tracker.git
-cd react-onboarding-tracker
+git clone https://github.com/Anniebsmith/Onboarding-Tracker-UI.git
+cd Onboarding-Tracker-UI
 
 # Install dependencies
 npm install
@@ -74,9 +74,6 @@ Visit `http://localhost:3000` in your browser.
 2. Choose **"Deploy to Vercel"** or **"Deploy to Netlify"**
 3. Sign in and deploy instantly
 
-### From GitHub Repository
-If you've exported to GitHub, you can deploy using:
-
 **Vercel:**
 ```bash
 npm i -g vercel
@@ -89,16 +86,6 @@ npm run build
 # Drag build folder to netlify.com
 ```
 
-**GitHub Pages:**
-```bash
-npm install --save-dev gh-pages
-# Add to package.json:
-# "homepage": "https://yourusername.github.io/repo-name"
-# "scripts": { "deploy": "gh-pages -d build" }
-npm run deploy
-```
-
-## 💻 Usage
 
 ### Basic Implementation
 ```jsx
@@ -202,9 +189,7 @@ The component includes interactive testing:
 - Test completion celebration
 
 For automated testing:
-```bash
-npm test
-```
+Automated testing can be added via tools like Jest or React Testing Library. For now, use the interactive demo to test behavior.
 
 ## 🌟 Key Features in Detail
 
