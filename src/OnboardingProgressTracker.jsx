@@ -80,7 +80,7 @@ export default function OnboardingProgressTracker() {
   ];
 
   const [phaseData, setPhaseData] = useState(phases);
-  const [activePhase, setActivePhase] = useState(2); // Default to Phase 3
+  const [activePhase, setActivePhase] = useState(0); // Default to Phase 3
   const [hoveredPhase, setHoveredPhase] = useState(null);
   const [activeStepIndex, setActiveStepIndex] = useState(0);
 
