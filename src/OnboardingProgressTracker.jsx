@@ -2,15 +2,16 @@ import { useState } from "react";
 
 export default function OnboardingProgressTracker() {
   const customColors = {
-    purple: "#6b65ff",
-    lightGreen: "#d2ff66",
-    darkGreen: "#00785d",
-    borderGreen: "#00785d",
-    checkmarkGreen: "#00785d",
-    // New colors for the Site Setup phase groups
-    essential: "#6b65ff",
-    account: "#4299e1",
-    final: "#9061f9",
+    purple: "#e11d48", // Rose-600 - New Primary Action
+    lightGreen: "#fef3c7", // Amber-100 - New Completion Indicator
+    darkGreen: "#b45309", // Amber-700 - New Success State
+    borderGreen: "#b45309", // New Border for completed states
+    checkmarkGreen: "#b45309",
+
+    // Grouped phase colors
+    essential: "#059669", // Emerald-600
+    account: "#8b5cf6", // Violet-500
+    final: "#06b6d4", // Cyan-500
   };
 
   const phases = [
@@ -40,9 +41,24 @@ export default function OnboardingProgressTracker() {
       name: "Phase 3",
       description: "Description for Phase 3 setup and configuration steps.",
       steps: [
-        { id: 1, name: "Essential Step 1", group: "essential", completed: false },
-        { id: 2, name: "Essential Step 2", group: "essential", completed: false },
-        { id: 3, name: "Essential Step 3", group: "essential", completed: false },
+        {
+          id: 1,
+          name: "Essential Step 1",
+          group: "essential",
+          completed: false,
+        },
+        {
+          id: 2,
+          name: "Essential Step 2",
+          group: "essential",
+          completed: false,
+        },
+        {
+          id: 3,
+          name: "Essential Step 3",
+          group: "essential",
+          completed: false,
+        },
         { id: 4, name: "Account Step 1", group: "account", completed: false },
         { id: 5, name: "Account Step 2", group: "account", completed: false },
         { id: 6, name: "Final Step", group: "final", completed: false },
@@ -156,19 +172,19 @@ export default function OnboardingProgressTracker() {
       <div className="mb-6">
         {/* Group Headers */}
         <div className="flex border-b border-gray-300 mb-2">
-          <div className="w-1/2 px-2 py-1 bg-indigo-50 text-center rounded-t-lg border-t border-l border-r border-gray-300">
-            <h3 className="font-medium text-indigo-800 text-sm">
+          <div className="w-1/2 px-2 py-1 bg-emerald-50 text-center rounded-t-lg border-t border-l border-r border-gray-300">
+            <h3 className="font-medium text-emerald-800 text-sm">
               Essential Setup{" "}
-              <span className="text-xs text-indigo-600">(Required First)</span>
+              <span className="text-xs text-emerald-600">(Required First)</span>
             </h3>
           </div>
-          <div className="w-1/3 px-2 py-1 bg-blue-50 text-center rounded-t-lg border-t border-l border-r border-gray-300 ml-1">
-            <h3 className="font-medium text-blue-800 text-sm">
+          <div className="w-1/3 px-2 py-1 bg-violet-50 text-center rounded-t-lg border-t border-l border-r border-gray-300 ml-1">
+            <h3 className="font-medium text-violet-800 text-sm">
               Account Setup{" "}
             </h3>
           </div>
-          <div className="w-1/6 px-2 py-1 bg-purple-50 text-center rounded-t-lg border-t border-l border-r border-gray-300 ml-1">
-            <h3 className="font-medium text-purple-800 text-sm">Final</h3>
+          <div className="w-1/6 px-2 py-1 bg-cyan-50 text-center rounded-t-lg border-t border-l border-r border-gray-300 ml-1">
+            <h3 className="font-medium text-cyan-800 text-sm">Final</h3>
           </div>
         </div>
 
@@ -200,7 +216,7 @@ export default function OnboardingProgressTracker() {
                         ? "white"
                         : "#4b5563",
                       boxShadow: isActive
-                        ? "0 0 0 4px rgba(107, 101, 255, 0.2)"
+                        ? "0 0 0 4px rgba(5, 150, 105, 0.2)"
                         : "none",
                     }}
                     onClick={() => setActiveStepIndex(stepIndex)}
@@ -255,7 +271,7 @@ export default function OnboardingProgressTracker() {
                         ? "white"
                         : "#4b5563",
                       boxShadow: isActive
-                        ? "0 0 0 4px rgba(66, 153, 225, 0.2)"
+                        ? "0 0 0 4px rgba(139, 92, 246, 0.2)"
                         : "none",
                     }}
                     onClick={() => setActiveStepIndex(stepIndex)}
@@ -310,7 +326,7 @@ export default function OnboardingProgressTracker() {
                         ? "white"
                         : "#4b5563",
                       boxShadow: isActive
-                        ? "0 0 0 4px rgba(144, 97, 249, 0.2)"
+                        ? "0 0 0 4px rgba(6, 182, 212, 0.2)"
                         : "none",
                     }}
                     onClick={() => setActiveStepIndex(stepIndex)}
@@ -366,7 +382,7 @@ export default function OnboardingProgressTracker() {
             {currentStep.id}
           </div>
           <h3 className="font-bold text-lg">{currentStep.name}</h3>
-          <span className="ml-auto px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">
+          <span className="ml-auto px-3 py-1 bg-orange-100 text-orange-800 text-xs font-medium rounded-full">
             Current Step
           </span>
         </div>
@@ -499,13 +515,14 @@ export default function OnboardingProgressTracker() {
           <h2 className="text-3xl font-bold">
             {phaseData[activePhase].steps[activeStepIndex]?.name || "Step Name"}
           </h2>
-          
+
           <div className="bg-gray-50 p-6 rounded-lg">
             <p className="text-gray-800 mb-4">
-              This is the content area for the current step. Instructions, forms, 
-              and other content would be displayed here based on the selected step.
+              This is the content area for the current step. Instructions,
+              forms, and other content would be displayed here based on the
+              selected step.
             </p>
-            
+
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -517,7 +534,7 @@ export default function OnboardingProgressTracker() {
                   placeholder="Enter information here"
                 />
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Sample Dropdown
@@ -532,11 +549,11 @@ export default function OnboardingProgressTracker() {
           </div>
 
           <div className="flex justify-between mt-6">
-            <button className="text-sm text-purple-600 hover:text-purple-800">
+            <button className="text-sm text-rose-600 hover:text-rose-800">
               SKIP THIS STEP
             </button>
             <button
-              className="bg-purple-600 hover:bg-purple-700 text-white text-sm font-bold py-2 px-6 rounded-full"
+              className="bg-rose-600 hover:bg-rose-700 text-white text-sm font-bold py-2 px-6 rounded-full"
               onClick={() => toggleStep(activePhase, activeStepIndex)}
             >
               CONTINUE
@@ -550,7 +567,7 @@ export default function OnboardingProgressTracker() {
         <div
           className="mb-8 mx-4 p-6 rounded-md flex flex-col space-y-6"
           style={{
-            backgroundColor: "rgba(210, 255, 102, 0.2)",
+            backgroundColor: "rgba(254, 243, 199, 0.8)",
             borderWidth: "1px",
             borderColor: customColors.borderGreen,
           }}
@@ -579,7 +596,8 @@ export default function OnboardingProgressTracker() {
               className="text-xl font-semibold"
               style={{ color: customColors.darkGreen }}
             >
-              You've completed the onboarding process! All steps have been finished successfully.
+              You've completed the onboarding process! All steps have been
+              finished successfully.
             </span>
           </div>
 
