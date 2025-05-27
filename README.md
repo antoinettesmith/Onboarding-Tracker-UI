@@ -31,9 +31,15 @@ The component uses a modern, vibrant color palette:
 
 <!-- Add screenshots of your component here -->
 - Phase Navigation with Progress Tracking
+<img width="1512" alt="Phase Navigation with Progress Tracking" src="https://github.com/user-attachments/assets/1fa2c4e4-ccd1-4d5b-be99-82f994050074" />
 - Standard Step Layout (Phases 1, 2, 4)
+<img width="1509" alt="Standard Step Layout 1" src="https://github.com/user-attachments/assets/2e0edb06-c967-4cbe-a8c9-8e92a77482a1" />
+<img width="1509" alt="Standard Step Layout 2" src="https://github.com/user-attachments/assets/47fb7fa7-4360-4bfe-bb27-1166abc25767" />
 - Grouped Horizontal Layout (Phase 3)
+<img width="1512" alt="Grouped Horizontal Layout (Phase 3)" src="https://github.com/user-attachments/assets/109f8246-966d-455d-be89-fbc6e08ebb9a" />
 - Completion Celebration State
+<img width="1512" alt="Completion Celebration State" src="https://github.com/user-attachments/assets/06747186-bd9e-4cc0-8943-793b6d6a2239" />
+
 
 ## 🛠️ Development
 
