@@ -55,7 +55,7 @@ If you prefer local development:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Anniebsmith/Onboarding-Tracker-UI.git
+git clone https://github.com/antoinettesmith/Onboarding-Tracker-UI.git
 cd Onboarding-Tracker-UI
 
 # Install dependencies
