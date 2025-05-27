@@ -1,3 +1,5 @@
+# 🧭 React Onboarding Progress Tracker
+
 A comprehensive, multi-phase onboarding component built with **React** and **Tailwind CSS**. Features dynamic step layouts, progress tracking, and customizable workflows perfect for user onboarding, setup wizards, and multi-step processes.
 
 ## ✨ Features
@@ -23,8 +25,6 @@ A comprehensive, multi-phase onboarding component built with **React** and **Tai
 - Grouped Layout (Phase 3)
 - Completion State
 
-## 🛠️ Installation
-
 ### Prerequisites
 
 - Node.js (v14 or higher)
@@ -40,8 +40,6 @@ npm run dev    # or yarn dev
 ```
 
 Visit `http://localhost:3000` in your browser.
-
-## 💻 Usage
 
 ### Basic Implementation
 
@@ -121,24 +119,23 @@ OnboardingProgressTracker/
 └── Completion celebration message
 ```
 
-## 🔧 Development
-
-### Available Scripts
-
-- `npm run dev` – Start development server  
-- `npm run build` – Build for production  
-- `npm run preview` – Preview production build  
-- `npm run test` – Run test suite  
-
 ### Project Structure
 
 ```
 src/
-├── components/
-│   └── OnboardingProgressTracker.jsx
 ├── App.jsx
-├── main.jsx
-└── index.css
+├── OnboardingProgressTracker.jsx
+├── index.css
+├── index.js
+├── main.css
+├── tailwind.css
+```
+
+Other root files:
+```
+index.html
+package.json
+tailwind.config.js
 ```
 
 ## 🧪 Testing
@@ -155,14 +152,6 @@ npm run test
 - State management  
 - User interactions  
 - Progress calculations  
-
-## 🤝 Contributing
-
-1. Fork the repository  
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)  
-3. Commit your changes (`git commit -m 'Add amazing feature'`)  
-4. Push to the branch (`git push origin feature/amazing-feature`)  
-5. Open a Pull Request  
 
 ## 📝 License
 
