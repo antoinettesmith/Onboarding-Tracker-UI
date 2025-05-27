@@ -553,7 +553,8 @@ export default function OnboardingProgressTracker() {
               SKIP THIS STEP
             </button>
             <button
-              className="bg-rose-600 hover:bg-rose-700 text-white text-sm font-bold py-2 px-6 rounded-full"
+              className="bg-rose-600 hover:bg-rose-700 text-white text-sm font-bold py-2 px-6 mb-4 rounded-full"
+              style={{ backgroundColor: "#e11d48" }}
               onClick={() => toggleStep(activePhase, activeStepIndex)}
             >
               CONTINUE
