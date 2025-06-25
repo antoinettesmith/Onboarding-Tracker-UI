@@ -31,14 +31,13 @@ The component uses a modern, vibrant color palette:
 
 <!-- Add screenshots of your component here -->
 - Phase Navigation with Progress Tracking
-<img width="1512" alt="Phase Navigation with Progress Tracking" src="https://github.com/user-attachments/assets/1fa2c4e4-ccd1-4d5b-be99-82f994050074" />
+<img width="1512" alt="Phase Navigation with Progress Tracking" src="https://github.com/user-attachments/assets/bfd98f3b-0598-4574-9c46-028407f54e12"/>
 - Standard Step Layout (Phases 1, 2, 4)
-<img width="1509" alt="Standard Step Layout 1" src="https://github.com/user-attachments/assets/2e0edb06-c967-4cbe-a8c9-8e92a77482a1" />
-<img width="1509" alt="Standard Step Layout 2" src="https://github.com/user-attachments/assets/47fb7fa7-4360-4bfe-bb27-1166abc25767" />
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/a46bdcc1-de05-4ea5-8744-d7c63f58432b"/>
 - Grouped Horizontal Layout (Phase 3)
-<img width="1512" alt="Grouped Horizontal Layout (Phase 3)" src="https://github.com/user-attachments/assets/109f8246-966d-455d-be89-fbc6e08ebb9a" />
+<img width="1509" alt="Standard Step Layout 2" src="https://github.com/user-attachments/assets/6a018ade-386e-49c0-b06b-224b606ad5e7"/>
 - Completion Celebration State
-<img width="1512" alt="Completion Celebration State" src="https://github.com/user-attachments/assets/06747186-bd9e-4cc0-8943-793b6d6a2239" />
+<img width="1512" alt="Completion Celebration State" src="https://github.com/user-attachments/assets/33f1db88-f673-47f7-a93c-1ce4939ce01a" />
 
 
 ## 🛠️ Development
