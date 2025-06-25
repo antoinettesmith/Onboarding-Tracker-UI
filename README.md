@@ -15,7 +15,7 @@ A comprehensive, multi-phase onboarding component built with **React** and **Tai
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://zn4fkl.csb.app/) <!-- Replace with your actual deployed URL -->
+[View Live Demo](https://n4ngyf.csb.app/) <!-- Replace with your actual deployed URL -->
 
 ## 🎨 Color Scheme
 
