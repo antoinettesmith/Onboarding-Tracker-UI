@@ -815,9 +815,9 @@ export default function OnboardingProgressTracker() {
       </div>
     );
   };
-
+  //// start
   return (
-    <div className="w-full mx-auto bg-white rounded-lg p-8">
+    <div className="w-full mx-auto bg-gradient rounded-lg p-8">
       {/* Phase Selector */}
       <div className="relative flex items-center justify-between mb-12">
         <div className="absolute top-1/2 transform -translate-y-1/2 left-0 right-0 h-1 bg-gray-300"></div>
@@ -916,6 +916,7 @@ export default function OnboardingProgressTracker() {
                 </div>
               );
             })())}
+
       {/* Initial Welcome Page */}
       {activePhase === -1 && (
         <div className="space-y-6 bg-white p-6 rounded shadow max-w-3xl">
@@ -1932,7 +1933,7 @@ export default function OnboardingProgressTracker() {
                   className="bg-purple-600 hover:bg-purple-700 text-white text-sm font-bold py-2 px-6 rounded-full"
                   onClick={() => {
                     setActivePhase(3);
-                    setActiveStepIndex(-2);
+                    setActiveStepIndex(-1);
                   }}
                 >
                   Go to Final Review
